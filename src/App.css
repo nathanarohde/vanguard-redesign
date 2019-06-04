@@ -1,3 +1,7 @@
+a:hover {
+  text-decoration: underline;
+}
+
 .App {
   text-align: center;
 }
@@ -21,6 +25,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+.subtext {
+  font-size: 12px;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {
