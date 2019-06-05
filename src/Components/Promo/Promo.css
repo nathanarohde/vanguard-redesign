@@ -1,0 +1,11 @@
+.promo {
+  border: 1px solid #96151d;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 16px;
+  text-align: left;
+}
+
+.promo-text-wrapper {
+  max-width: 80%;
+}

@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import './Header.css';
 
 const header = () => {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Header stuff.
+    <header>
+      <p className="header-links">
+        <a href="https://investor.vanguard.com/home">Home</a>
+        <a>My Accounts</a>
       </p>
     </header>
   )
