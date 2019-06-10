@@ -1,11 +1,28 @@
 .promo {
-  border: 1px solid #96151d;
+  background-color: #efece3;
+  display: flex;
   margin: 0 auto;
   max-width: 1000px;
-  padding: 16px;
+  padding: 32px 16px;
   text-align: left;
 }
 
 .promo-text-wrapper {
-  max-width: 80%;
+  box-sizing: border-box;
+  display: inline-block;
+  flex: 4;
+  padding-right: 16px;
+}
+
+.promo-text-wrapper h2 {
+  margin-top: 0;
+}
+
+.promo-image {
+  flex: 1;
+}
+
+.promo-image img {
+  max-height: 100%;
+  max-width: 100%;
 }
