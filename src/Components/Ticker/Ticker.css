@@ -1,0 +1,14 @@
+.ticker {
+  background-color: #e5e5e5;
+  padding: 16px 0;
+  text-align: left;
+}
+.tickerWrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.tickerWrapper span {
+  flex: 1;
+}
