@@ -1,0 +1,12 @@
+/* .bodyLinks {
+  background-color: red !important;
+} */
+
+.bodyLinks a, .bodyLinks a:visited {
+  color: #8d4900;
+  text-decoration: underline;
+}
+
+.bodyLinks a:hover {
+  color:#96151d;
+}

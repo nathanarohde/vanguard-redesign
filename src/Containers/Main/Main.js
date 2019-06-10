@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Ticker from '../../Components/Ticker/Ticker';
 import Greetings from '../../Components/Greetings/Greetings';
 import Promo from '../../Components/Promo/Promo';
-import BodyLinks from '../../Components/BodyLinks/BodyLinks';
+import FrequentLinks from '../../Components/FrequentLinks/FrequentLinks';
 
 class Main extends Component {
   render() {
@@ -12,7 +12,7 @@ class Main extends Component {
         <Greetings></Greetings>
         <Promo></Promo>
         <p>Here is body content.</p>
-        <BodyLinks></BodyLinks>
+        <FrequentLinks></FrequentLinks>
       </main>
     )
   }

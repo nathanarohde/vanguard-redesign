@@ -1,5 +1,6 @@
 import React from 'react';
 import './Promo.css';
+import '../../UtilityCSS/BodyLinks.css';
 
 const promo = () => {
   return (
@@ -11,7 +12,9 @@ const promo = () => {
         <p>
           <b>Vanguard Global ESG Select Stock Fud</b> is the first actively managed fund in our environmental, social, and governance (ESG) lineup. It includes stocks from financially sound companies with the highest standards for conducting business in support of ESG issues.  You can get started today with as little as $3,000.
         </p>
-        <a>See what makes this new fund different</a>
+        <p className="bodyLinks">
+          <a href="">See what makes this new fund different</a>
+        </p>
       </div>
     </section>
   )
