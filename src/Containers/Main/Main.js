@@ -4,6 +4,7 @@ import Ticker from '../../Components/Ticker/Ticker';
 import Greetings from '../../Components/Greetings/Greetings';
 import Promo from '../../Components/Promo/Promo';
 import FrequentLinks from '../../Components/FrequentLinks/FrequentLinks';
+import TabNav from '../../Components/TabNav/TabNav';
 import keys from '../../key.json';
 
 class Main extends Component {
@@ -42,6 +43,7 @@ class Main extends Component {
         }
         <Greetings></Greetings>
         <Promo></Promo>
+        <TabNav></TabNav>
         <p>Here is body content.</p>
         <FrequentLinks></FrequentLinks>
       </main>
