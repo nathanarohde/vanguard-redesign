@@ -15,7 +15,7 @@
   display: block;
 }
 
-.frequentLinks-nav-right h5 {
+.frequentLinks-nav-left h5, .frequentLinks-nav-right h5 {
   margin-top: 0;
 }
 

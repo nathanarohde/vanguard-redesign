@@ -6,11 +6,13 @@ const bodyLinks = () => {
   return (
     <section className="frequentLinks">
       <nav className="bodyLinks frequentLinks-nav-left">
+        <h5>Execute Transactions</h5>
         <a href="">Buy funds</a>
         <a href="">Sell funds</a>
         <a href="">Exchange funds</a>
         <a href="">Trade ETFs</a>
         <hr/>
+        <h5>Move Your IRA</h5>
         <a href="">Roll over an account</a>
         <a href="">Transfer an account</a>
       </nav>

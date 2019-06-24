@@ -1,13 +1,30 @@
 header {
-  background-color: #96151d;
   padding: 0 auto;
   text-align: left;
 }
 
-.header-links {
+header img {
+  height: 44px;
+  width: 157px;
+}
+
+.headerSearch {
+  background-color: #e5e5e5;
+  border: none;
+  float: right;
+  padding: 8px;
+  height: 2rem;
+  width: 16.25rem;
+}
+
+.header-links, .header-top {
   margin: 0 auto;
   max-width: 1000px;
   padding: 8px 0;
+}
+
+.header-links-wrapper {
+  background-color: #96151d;
 }
 
 .header-links a {
