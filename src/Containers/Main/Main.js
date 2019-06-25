@@ -8,21 +8,31 @@ import TabNav from '../../Components/TabNav/TabNav';
 import keys from '../../key.json';
 
 class Main extends Component {
-  state = {
-    djia: null,
-    nasdaq: null,
-    sp500: null,
-    tnote: null,
+  constructor(props){
+    super(props);
+    this.state = {
+      djia: null,
+      nasdaq: null,
+      sp500: null,
+      tnote: null,
+      currentTab: "Balance Overview"
+    }
+
+    this.tabList = ["Balance Overview", "Recent Activity", "Performance Summary", "Asset Mix"]
+
+    this.changeTab = this.changeTab.bind(this);
   }
 
-  componentDidMount() {
-    for (let stock in this.state.stockList) {
-      console.log(this.state.stockList[stock]);
-    }
-    // this.setTicker('djia', 'DJIA');
-    // this.setTicker('nasdaq', 'NDAQ');
-    // this.setTicker('sp500', '.INX');
-    // this.setTicker('tnote', '^TNX');
+  // componentDidMount() {
+  //   this.setTicker('djia', 'DJIA');
+  //   this.setTicker('nasdaq', 'NDAQ');
+  //   this.setTicker('sp500', '.INX');
+  //   this.setTicker('tnote', '^TNX');
+  // }
+
+  changeTab = (tabName) => {
+    this.setState({currentTab: tabName});
+    // this.setState({currentTab: tabName}, () => {console.log(this.state.currentTab)});
   }
 
   setTicker(name, ticker){
@@ -35,7 +45,19 @@ class Main extends Component {
       })
   }
 
+  // <TabNav clicked={ () => this.changeTab("Balance Overview") } tab="Balance Overview" className={(this.state.currentTab === "Balance Overview" ? "active" : false )}></TabNav>
+
   render() {
+    let tabs = (this.tabList).map( tab => {
+      let tabStatus = 'inactive';
+      if ( this.state.currentTab === tab ){
+        tabStatus = 'active';
+      }
+      return (
+        <TabNav clicked={ () => this.changeTab(tab) } tab={ tab } key={ tab } tabStatus ={ tabStatus }></TabNav>
+      )
+    })
+
     return (
       <main>
         { (this.state.djia && this.state.nasdaq && this.state.sp500 && this.state.tnote) &&
@@ -43,12 +65,18 @@ class Main extends Component {
         }
         <Greetings></Greetings>
         <Promo></Promo>
-        <TabNav></TabNav>
+        <section className="tabNav">
+          { tabs }
+        </section>
         <p>Here is body content.</p>
         <FrequentLinks></FrequentLinks>
       </main>
     )
   }
 }
+// <TabNav clicked={ () => this.changeTab("Balance Overview") } tab="Balance Overview" className={(this.state.currentTab === "Balance Overview" ? "active" : false )}></TabNav>
+// <TabNav clicked={ () => this.changeTab("Recent Activity") } tab="Recent Activity" className={(this.state.currentTab === "Balance Overview" ? "active" : false )}></TabNav>
+// <TabNav clicked={ () => this.changeTab("Performance Summary") } tab="Performance Summary" className={(this.state.currentTab === "Balance Overview" ? "active" : false )}></TabNav>
+// <TabNav clicked={ () => this.changeTab("Asset Mix") } tab="Asset Mix" className={(this.state.currentTab === "Balance Overview" ? "active" : false )}></TabNav>
 
 export default Main;
