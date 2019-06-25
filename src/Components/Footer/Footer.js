@@ -7,38 +7,38 @@ const footer = () => {
       <nav className="footer-site-navigation">
         <div>
           <p><b>My Accounts</b></p>
-          <a>Log on</a>
+          <a href="https://investor.vanguard.com/my-account/log-on">Log on</a>
         </div>
         <div>
           <p><b>Investing</b></p>
-          <a>Investment products</a>
-          <a>Account types</a>
-          <a>Rollovers & transfers</a>
+          <a href="https://investor.vanguard.com/investing/investment-products">Investment products</a>
+          <a href="https://investor.vanguard.com/investing/investment-accounts">Account types</a>
+          <a href="https://investor.vanguard.com/investing/rollover-iras-transfers">Rollovers & transfers</a>
         </div>
         <div>
           <p><b>Advice & Retirement</b></p>
-          <a>Partner with an advisor</a>
-          <a>Investing goals</a>
-          <a>Retirement planning</a>
-          <a>Investor education</a>
-          <a>Calculators & tools</a>
-          <a>Tax-filing information</a>
-          <a>Forms</a>
+          <a href="https://investor.vanguard.com/financial-advisor/financial-advice">Partner with an advisor</a>
+          <a href="https://investor.vanguard.com/investing/goals">Investing goals</a>
+          <a href="https://investor.vanguard.com/retirement">Retirement planning</a>
+          <a href="https://investor.vanguard.com/investing/investor-education">Investor education</a>
+          <a href="https://investor.vanguard.com/investing/investment-calculator">Calculators & tools</a>
+          <a href="https://investor.vanguard.com/taxes/">Tax-filing information</a>
+          <a href="https://personal.vanguard.com/us/literature">Forms</a>
         </div>
         <div>
           <p><b>News & Perspectives</b></p>
-          <a>News & views</a>
-          <a>Your Investing Life</a>
-          <a>Vanguard Blog</a>
-          <a>Research</a>
-          <a>Market summary</a>
+          <a href="https://investornews.vanguard/">News & views</a>
+          <a href="https://investornews.vanguard/your-investing-life">Your Investing Life</a>
+          <a href="https://vanguardblog.com/">Vanguard Blog</a>
+          <a href="https://investor.vanguard.com/investing/investment-research">Research</a>
+          <a href="https://personal.vanguard.com/us/funds/tools/marketsummary#/">Market summary</a>
         </div>
         <div>
           <p><b>Benefits & Costs</b></p>
-          <a>Why we're different</a>
-          <a>Benefits</a>
-          <a>Costs & fees</a>
-          <a>Account conveniences</a>
+          <a href="https://investor.vanguard.com/what-we-offer/why-vanguard">Why we're different</a>
+          <a href="https://investor.vanguard.com/investing/benefits/">Benefits</a>
+          <a href="https://investor.vanguard.com/investing/investment-fees">Costs & fees</a>
+          <a href="https://investor.vanguard.com/investing/account-conveniences">Account conveniences</a>
         </div>
       </nav>
       <div className="footer-bottom">
